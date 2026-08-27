@@ -24,11 +24,6 @@ I build [PayReckon](https://payreckon.co.uk), a free UK take-home pay calculator
 
 Compliance automation and hardening cloud-native CI/CD pipelines.
 
-<br>
-
-<img src="https://github-readme-stats.vercel.app/api?username=zerotrustdavid&show_icons=true&count_private=false&hide_rank=true&theme=dark&cache_seconds=86400" alt="GitHub stats" height="165">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=zerotrustdavid&layout=compact&count_private=false&theme=dark&cache_seconds=86400" alt="Top languages" height="165">
-
 ---
 
 [Invision Solutions](https://www.invisionsolutions.co.uk) · [PayReckon](https://payreckon.co.uk)
