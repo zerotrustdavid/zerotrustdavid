@@ -26,8 +26,8 @@ Compliance automation and hardening cloud-native CI/CD pipelines.
 
 <br>
 
-<img src="https://github-readme-stats.vercel.app/api?username=zerotrustdavid&show_icons=true&count_private=false&hide_rank=true&hide_border=true&bg_color=0d1117&title_color=2ec4b6&text_color=f0f6fc&icon_color=2ec4b6" alt="GitHub stats" height="165">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=zerotrustdavid&layout=compact&count_private=false&hide_border=true&bg_color=0d1117&title_color=2ec4b6&text_color=f0f6fc" alt="Top languages" height="165">
+<img src="https://github-readme-stats.vercel.app/api?username=zerotrustdavid&show_icons=true&count_private=false&hide_rank=true&theme=dark&cache_seconds=86400" alt="GitHub stats" height="165">
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=zerotrustdavid&layout=compact&count_private=false&theme=dark&cache_seconds=86400" alt="Top languages" height="165">
 
 ---
 
