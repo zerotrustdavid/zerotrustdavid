@@ -19,23 +19,14 @@ for the record of the other profile repository.
 - **Private vulnerability reporting:** not confirmed.
 - **Actions default workflow permissions:** not confirmed (this repo carries no workflows).
 - **Signed commits on `main`:** not required — no ruleset exists to carry that setting.
-- **`has_wiki` / `has_projects`:** on, as last confirmed live via the GitHub API — target is off.
+- **`has_wiki` / `has_projects`:** off (confirmed live via the GitHub API).
 
 ## Outstanding
 
-Settings-page checklist (this environment has no tool that reaches any of
-these endpoints, so they must be applied and confirmed directly):
-
-1. **Settings → General → Features** — untick Wikis and Projects.
-2. **Settings → General → Pull Requests** — tick "Automatically delete head
-   branches"; untick "Allow merge commits" and "Allow rebase merging", leave
-   "Allow squash merging" ticked.
-3. **Settings → Advanced Security** — enable Secret scanning, its Push
-   protection sub-toggle, and Dependabot security updates. Public repos
-   sometimes ship with secret scanning already on — check current state first.
-4. Same page — enable Private vulnerability reporting.
-5. **Settings → Actions → General → Workflow permissions** — select "Read
-   repository contents permission"; untick "Allow GitHub Actions to create
-   and approve pull requests".
-6. Re-verify with a live query (API or the Settings UI) and update this file
-   to match — do not mark an item done without seeing the confirming state.
+Still not independently confirmed (this environment has no tool that reaches
+these endpoints, so they can only be taken on the owner's word or checked
+directly): secret scanning, push protection, Dependabot security updates,
+private vulnerability reporting, Actions default workflow permissions,
+delete-branch-on-merge and merge-method restrictions. Confirm each under
+Settings → Advanced Security / General / Actions, and update the relevant
+line above once seen — not on the strength of a toggle having been clicked.
