@@ -13,20 +13,25 @@ for the record of the other profile repository.
   no CI, so the risk it would have covered is low). No tool available to this
   record's verifying environment can read rulesets, so this line is taken on
   the owner's word, not independently confirmed.
-- **Secret scanning / push protection / Dependabot security updates:** not
-  confirmed. The environment that verified this record has no route to the
-  repository security-settings API — check directly under Settings → Advanced Security.
-- **Private vulnerability reporting:** not confirmed.
-- **Actions default workflow permissions:** not confirmed (this repo carries no workflows).
+- **Secret scanning / push protection / Dependabot security updates:** enabled (owner-confirmed).
+- **Private vulnerability reporting:** enabled (owner-confirmed).
+- **Actions default workflow permissions:** read-only, and Actions cannot create
+  or approve pull requests (owner-confirmed; this repo carries no workflows).
+- **Merge settings:** squash-only merges with automatic head-branch deletion
+  (owner-confirmed).
 - **Signed commits on `main`:** not required — no ruleset exists to carry that setting.
-- **`has_wiki` / `has_projects`:** off (confirmed live via the GitHub API).
+- **`has_wiki` / `has_projects`:** off (verified via the GitHub API).
 
-## Outstanding
+## Provenance
 
-Still not independently confirmed (this environment has no tool that reaches
-these endpoints, so they can only be taken on the owner's word or checked
-directly): secret scanning, push protection, Dependabot security updates,
-private vulnerability reporting, Actions default workflow permissions,
-delete-branch-on-merge and merge-method restrictions. Confirm each under
-Settings → Advanced Security / General / Actions, and update the relevant
-line above once seen — not on the strength of a toggle having been clicked.
+Two levels of confidence are used above, deliberately:
+
+- **verified via the GitHub API** — read back live from GitHub by the
+  environment maintaining this record.
+- **owner-confirmed** — applied and checked by the owner in the GitHub
+  Settings UI. The environment maintaining this record has no tool that
+  reaches the repository security-settings, Actions-permissions, or ruleset
+  endpoints, so it cannot independently confirm these.
+
+Anything re-checked later should be updated in place, and promoted to
+"verified" only once actually read back.
